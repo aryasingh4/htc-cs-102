@@ -7,8 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <TextBlock FontSize="15">Dog Name: </TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="779*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="3">
+            <TextBlock FontSize="15">Dog Name:</TextBlock>
             <TextBox Name="DogName"></TextBox>
             <Button Click="Bark_Button_Click">Bark</Button>
             <Button Click="SayName_Button_Click">Say Name</Button>

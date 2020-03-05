@@ -5,22 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace week_3_code_along
+namespace Week_3_code_along
 {
-    class dog
+    class Dog
     {
-        public string breed;
-        public int height; 
-        public string name; 
+        public string Breed;
+        public int Height;
+        public string Name;
 
-        public void bark()
+        public void Bark()
         {
-            MessageBox.Show("Bark"); 
+            MessageBox.Show("Bark");
         }
 
         public void SayName()
         {
-            MessageBox.Show("My name is " + name); 
+            MessageBox.Show("My name is " + Name);
         }
     }
 }
