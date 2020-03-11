@@ -12,10 +12,13 @@ namespace Week_4_code_along
         public string Title { get; set; }
         public int ReleaseYear { get; set; }
 
-        public Movie(string myTitle, int myReleaseYear)
+        public double Tomatoes { get; set; }
+
+        public Movie(string myTitle, int ReleaseYearInput, double Tomatoes)
         {
             this.Title = myTitle;
-            this.ReleaseYear = myReleaseYear; 
+            this.ReleaseYear = ReleaseYearInput;
+            this.Tomatoes = Tomatoes; 
         }
 
         public Movie()
@@ -26,6 +29,7 @@ namespace Week_4_code_along
         {
             string info = "Title: " + this.Title;
             info += "\nRelease Year" + this.ReleaseYear;
+            info += "\nTomatoes" + this.Tomatoes; 
             MessageBox.Show(info); 
 
         }
